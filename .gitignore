@@ -1,0 +1,17 @@
+# credenciais e segredos
+.env
+*.pem
+*.key
+
+# artefatos
+*.zip
+volume/
+
+# ambiente
+.venv/
+__pycache__/
+node_modules/
+
+# sistema
+.DS_Store
+Thumbs.db
