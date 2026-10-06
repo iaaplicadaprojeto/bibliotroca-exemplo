@@ -16,5 +16,12 @@ node_modules/
 .DS_Store
 Thumbs.db
 
+# gerados pelo deploy, nao versionados
+infra/.id-api
+infra/.url-api
+infra/openapi-pronto.yaml
+app/site/config.js
+testes/tempos.txt
+
 # saidas de invocacao
 saida*.json

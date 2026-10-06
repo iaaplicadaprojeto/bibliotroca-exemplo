@@ -9,6 +9,7 @@ BUCKET="${PREFIXO}-capas"
 TABELA="${PREFIXO}-livros"
 PAPEL="${PREFIXO}-papel-lambda"
 FUNCAO_GRAVAR="${PREFIXO}-gravar"
+FUNCAO_MARCAR="${PREFIXO}-marcar"
 
 # Forma de enviar comandos ao emulador.
 # Se você escolheu a forma 2 ou 3 na Sprint 0,
@@ -42,3 +43,8 @@ shutil.make_archive(sys.argv[1], 'zip', sys.argv[2])" "$base" "$base"
   mv "$base.zip" "$destino"
   rm -rf "$base"
 }
+
+FUNCAO_CONSULTAR="${PREFIXO}-consultar"
+API_NOME="${PREFIXO}-api"
+ESTAGIO="dev"
+BUCKET_SITE="${PREFIXO}-site"
