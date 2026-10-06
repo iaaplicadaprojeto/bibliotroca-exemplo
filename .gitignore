@@ -15,3 +15,6 @@ node_modules/
 # sistema
 .DS_Store
 Thumbs.db
+
+# saidas de invocacao
+saida*.json

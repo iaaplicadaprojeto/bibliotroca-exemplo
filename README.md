@@ -1,7 +1,18 @@
-> **Você está na branch `sprint-2`.** Ela está congelada no estado em
+> **Você está na branch `sprint-3`.** Ela está congelada no estado em
 > que o projeto deveria estar ao final daquela sprint: aqui existe só o
 > que já tinha sido feito até ali. O estado final do projeto está na
 > branch `main`.
+>
+> Nesta branch ainda não há API, site nem testes. O `./infra/deploy.sh`
+> cria o bucket, a tabela, o papel e a função `gravar`, e termina em
+> `ambiente criado`. Para ver a função gravando, invoque com os eventos
+> da pasta `eventos/`:
+>
+> ```
+> lstk aws lambda invoke --function-name bibliotroca-gravar \
+>   --payload fileb://eventos/gravar-ok.json saida.json
+> cat saida.json
+> ```
 
 # BiblioTroca
 

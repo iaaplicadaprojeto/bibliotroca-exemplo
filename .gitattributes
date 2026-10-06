@@ -1,0 +1,4 @@
+# Os scripts bash precisam de fim de linha LF, mesmo no Windows.
+# Sem esta linha, o Git do Windows pode converter para CRLF ao baixar,
+# e o Git Bash para no primeiro script com $'\r': command not found.
+*.sh text eol=lf
